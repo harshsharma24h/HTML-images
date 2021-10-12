@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 30px;
+        }
+
+        .container {
+
+            /* border: 2px solid red;  */
+            height: 600px;
+            display: flex;
+
+        }
+
+        .box1 {
+            z-index: 1;
+            width: 110px;
+            height: 600px;
+            /* border: 2px solid red;  */
+            background-color: #FAFAFA;
+            box-shadow: black 19px 4px 64px -44px;
+
+
+        }
+
+        .inbox {
+            height: 80px;
+            padding-bottom: 6px;
+            /* border: 2px solid red; */
+        }
+
+        .inbox1 {
+            height: 80px;
+            padding-bottom: 6px;
+            border-bottom: 4px solid #F1F2F4;
+            /* border: 2px solid red; */
+        }
+        .inbox2 {
+            height: 80px;
+            padding-bottom: 6px;
+            border-bottom: 4px solid #F1F2F4;
+            border-left: 3px solid #4F7DBE; 
+            background-color: #D0E0ED;
+        }
+
+        #text {
+            text-align: center;
+            margin-top: 0px;
+            /* padding-left: 22px; */
+        color: #99A6AC;
+            font-weight: 800;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #text2 {
+            margin-top: 0px;
+            /* padding-left: 11px; */
+            color: #384858;
+            text-align: center;
+            font-weight: 800;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #text3 {
+            margin-top: 0px;
+            /* padding-left: 24px; */
+            text-align: center;
+            font-weight: 800;
+            color: #99A6AC;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+       #logo{
+        padding-left: 17px;
+       }
+        #user {
+          
+            height: 33px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 20px;
+            
+          
+
+
+        }
+
+        #lesson {
+           
+            height: 30px;
+            padding-left: 37px;
+            padding-right: 40px;
+            padding-top: 20px;
+        }
+
+        #setting {
+            height: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 20px;
+        }
+
+        #video {
+
+            height: 10px;
+            margin-top: 0px;
+            padding-left: 50px;
+            transform: rotate(63deg);
+        }
+
+        #playbtn {
+            display: flex;
+        }
+
+        .box2 {
+            width: 100%;
+            background-color: #F1F2F4;
+            z-index: -1;
+        }
+
+        #blank {
+            background-color: white;
+        }
+
+        #url {
+            padding: 12px;
+            background-color: #FAFAFA;
+            /* border: 2px solid red; */
+            margin-left: 186px;
+            margin-right: 87px;
+            border-radius: 6px;
+        }
+
+        #upload {
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            background-color: #FAFAFA;
+            margin-left: 186px;
+            /* border:  2px solid red; */
+            width: 120px;
+            height: 120px;
+        }
+        #text4{
+            margin-left: -9px;
+            color: #99A6AC;
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #text5 {
+            margin-top: 50px;
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="box1">
+                <div class="inbox1"> <img src="img/Screenshot 2021-10-10 174203.png" alt="" id="logo"></div>
+                <div class="inbox"><img src="img/new user (2).png" alt="" id="user">
+                    <p id="text">student</p>
+                </div>
+                <div class="inbox2"><img src="img/book (2).png" alt="" id="lesson">
+                    <p id="text2">Lesson plan</p>
+                </div>
+                <div class="inbox"> <img src="img/new setting.png" alt="" id="setting">
+                    <p id="text3">setting</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="inbox" id="blank"></div>
+            <div class="inbox">
+                <div id="playbtn"><img src="img/play.png" alt="" id="video">
+                    <p id="text4">Videos</p>
+                </div>
+            </div>
+            <div class="inbox">
+                <div id="url"  style="font-size: 14px; font-weight: 700; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #696969;">Insert URL here</div>
+            </div>
+          <div style="text-align: center; font-weight: 700; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">or</div>
+            <div id="upload">
+                <p id="text5">upload</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
